@@ -20,15 +20,21 @@
       width: 250px;
       border-radius: 20px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      margin-top: 20px;
+      margin: 20px auto;
     }
 
-    .contenedor {
+    .main-layout {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
+      flex-wrap: wrap;
+      gap: 40px;
       margin-top: 30px;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
 
     .card {
@@ -62,41 +68,54 @@
 
 <body>
   <h1>¡Hola, soy Andrés Felipe Romero!</h1>
-
   <img src="andres-avatar.png" alt="Avatar de Andrés Felipe" class="avatar">
 
-  <div class="contenedor">
-    <!-- Materias Favoritas -->
-    <div class="card">
-      <h2>📚 Mis materias favoritas</h2>
-      <ul>
-        <li>Matemáticas</li>
-        <li>Ciencias Naturales</li>
-        <li>Educación Física</li>
-      </ul>
+  <div class="main-layout">
+    <!-- Columna izquierda -->
+    <div class="column">
+      <!-- Materias Favoritas -->
+      <div class="card">
+        <h2>📘 Mis materias favoritas</h2>
+        <ul>
+          <li>Matemáticas</li>
+          <li>Ciencias Naturales</li>
+          <li>Educación Física</li>
+        </ul>
+      </div>
+
+      <!-- Pasatiempos -->
+      <div class="card">
+        <h2>🎮 Mis pasatiempos</h2>
+        <ul>
+          <li>Jugar fútbol</li>
+          <li>Ver videos de ciencia</li>
+          <li>Dibujar cosas raras</li>
+        </ul>
+      </div>
     </div>
 
-    <!-- Pasatiempos -->
-    <div class="card">
-      <h2>🎮 Mis pasatiempos</h2>
-      <ul>
-        <li>Jugar fútbol</li>
-        <li>Ver videos de ciencia</li>
-        <li>Dibujar cosas raras</li>
-      </ul>
-    </div>
+    <!-- Columna derecha -->
+    <div class="column">
+      <!-- Juegos Favoritos -->
+      <div class="card">
+        <h2>🕹️ Juegos favoritos</h2>
+        <ul>
+          <li>Roblox</li>
+          <li>Dream League Soccer 2025 (Android)</li>
+          <li>GTA San Andreas</li>
+        </ul>
+      </div>
 
-    <!-- Juegos Favoritos -->
-    <div class="card">
-      <h2>🕹️ Juegos favoritos</h2>
-      <ul>
-        <li>Roblox</li>
-        <li>Dream League Soccer 2025 (Android)</li>
-        <li>GTA San Andreas</li>
-      </ul>
+      <!-- Extra o futura sección -->
+      <div class="card">
+        <h2>💡 Mi superpoder secreto</h2>
+        <ul>
+          <li>¡Imaginar mundos épicos!</li>
+          <li>Resolver problemas como un genio</li>
+          <li>Crear páginas geniales 🧠💻</li>
+        </ul>
+      </div>
     </div>
-
-    <!-- Puedes agregar otra tarjeta aquí si más adelante agregas algo nuevo -->
   </div>
 </body>
 </html>
