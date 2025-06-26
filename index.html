@@ -1,12 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>Mi Página Genial</title>
-
-  <!-- Tipografía estilo gamer -->
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
   <style>
     body {
       background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
@@ -64,43 +62,34 @@
       color: #00ff88;
     }
 
-    .extras {
-      margin-top: 40px;
+    .gallery, .video, .logo {
+      margin-top: 50px;
     }
 
-    .drawing {
-      width: 220px;
+    .gallery img {
+      width: 200px;
+      height: auto;
       margin: 10px;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(255,255,255,0.2);
-    }
-
-    .drawings-container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
+      box-shadow: 0 0 10px #000;
     }
 
     iframe {
-      margin-top: 30px;
       border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+      margin-top: 10px;
     }
 
-    .logo-barcelona {
-      width: 120px;
-      margin-top: 30px;
+    .logo img {
+      margin-top: 20px;
+      width: 100px;
     }
   </style>
 </head>
-
 <body>
   <h1>¡Hola, soy Andrés Felipe Romero!</h1>
-  <img src="avatar-felipe-gamer.png" alt="Avatar gamer de Andrés Felipe" class="avatar">
+  <img src="andres-avatar-roblox.png" alt="Avatar gamer de Andrés Felipe" class="avatar">
 
   <div class="main-layout">
-    <!-- Columna izquierda -->
     <div class="column">
       <div class="card">
         <h2>📘 Mis materias favoritas</h2>
@@ -110,7 +99,6 @@
           <li>Educación Física</li>
         </ul>
       </div>
-
       <div class="card">
         <h2>🎮 Mis pasatiempos</h2>
         <ul>
@@ -121,7 +109,6 @@
       </div>
     </div>
 
-    <!-- Columna derecha -->
     <div class="column">
       <div class="card">
         <h2>🕹️ Juegos favoritos</h2>
@@ -131,7 +118,6 @@
           <li>GTA San Andreas</li>
         </ul>
       </div>
-
       <div class="card">
         <h2>💡 Mis sueños que cumplir</h2>
         <ul>
@@ -143,20 +129,27 @@
     </div>
   </div>
 
-  <!-- Extras -->
-  <div class="extras">
+  <div class="gallery">
     <h2>🖌️ Algunos de mis dibujos</h2>
-    <div class="drawings-container">
-      <img src="dibujo1.png" alt="Dibujo de Andrés 1" class="drawing">
-      <img src="dibujo2.png" alt="Dibujo de Andrés 2" class="drawing">
-      <img src="dibujo3.png" alt="Dibujo de Andrés 3" class="drawing">
-    </div>
+    <img src="dibujo1.jpg" alt="Dibujo de Andrés 1">
+    <img src="dibujo2.jpg" alt="Dibujo de Andrés 2">
+    <img src="dibujo3.jpg" alt="Dibujo de Andrés 3">
+  </div>
 
+  <div class="video">
     <h2>🎬 Mi canal favorito de YouTube</h2>
-    <iframe width="360" height="215" src="https://www.youtube.com/embed?listType=user_uploads&list=TitoLizzardo" title="Canal Tito Lizzardo" frameborder="0" allowfullscreen></iframe>
+    <iframe width="360" height="215"
+      src="https://www.youtube.com/embed/Ps0HgLU1N3k"
+      title="Video de Tito Lizzardo"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
 
+  <div class="logo">
     <h2>🔵 Equipo favorito</h2>
-    <img src="logo-barcelona.png" alt="Logo del FC Barcelona" class="logo-barcelona">
+    <img src="barcelona-logo.png" alt="Logo del FC Barcelona">
   </div>
 </body>
 </html>
